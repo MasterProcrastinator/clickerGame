@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ClickerGame-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="clickerGame" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FVS-bZ-i0x"/>
+                    <navigationItem key="navigationItem" title="ClickerGame" id="FVS-bZ-i0x"/>
                     <connections>
                         <outlet property="pointsVariable" destination="Gho-cU-1e9" id="BuW-OZ-h6j"/>
                         <segue destination="aWl-Ex-FGe" kind="show" identifier="segue" id="TlF-xx-wHZ"/>
@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="1074" y="15"/>
         </scene>
-        <!--View Controller3-->
+        <!--Clicker Game-->
         <scene sceneID="ROf-oU-v0g">
             <objects>
                 <viewController id="aWl-Ex-FGe" customClass="ViewController3" customModule="clickerGame" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                                     <action selector="buy1Action:" destination="aWl-Ex-FGe" eventType="touchUpInside" id="wgx-Q4-vwZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upgrade 2 Price = 100 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-B2-JiG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upgrade 2 Price = 100 points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-B2-JiG">
                                 <rect key="frame" x="85" y="358" width="222" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -102,15 +102,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-ZB-aPj">
+                                <rect key="frame" x="99" y="103" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OUY-Sk-74L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kYe-sP-KkS"/>
+                    <navigationItem key="navigationItem" title="Clicker Game" id="kYe-sP-KkS"/>
                     <connections>
                         <outlet property="error" destination="rNv-Jg-vCs" id="m7L-YH-lex"/>
                         <outlet property="label" destination="aRT-4z-aWk" id="eGT-13-UKu"/>
                         <outlet property="label2" destination="fbf-B2-JiG" id="h3n-a1-W85"/>
+                        <outlet property="labelUpgrade" destination="aRT-4z-aWk" id="j0y-sg-Jwu"/>
+                        <outlet property="labelUpgrade2" destination="fbf-B2-JiG" id="8Zj-ng-98O"/>
+                        <outlet property="pointCountLabel" destination="f2y-ZB-aPj" id="e9J-Aa-BPx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHo-hR-WGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

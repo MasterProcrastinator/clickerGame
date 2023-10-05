@@ -35,14 +35,14 @@ class ViewController: UIViewController {
         if(upgrade1 == true && upgrade2 == true){
             pointCount = pointCount + 20
         }
-        if(upgrade1 == true){
+        else if(upgrade1 == true){
             pointCount = pointCount + 5
         }
-        if(upgrade2 == true){
+        else if(upgrade2 == true){
             pointCount = pointCount + 15
         }
         else{
-            pointCount = pointCount+1
+            pointCount = pointCount + 1
         }
         pointsVariable.text = "\(pointCount)"
     }
