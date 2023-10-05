@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1E25C12ACC60E9000F8218 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E25C02ACC60E9000F8218 /* ViewController3.swift */; };
 		BFDA80FA2ACC5C5C007C0344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA80F92ACC5C5C007C0344 /* AppDelegate.swift */; };
 		BFDA80FC2ACC5C5C007C0344 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA80FB2ACC5C5C007C0344 /* SceneDelegate.swift */; };
 		BFDA80FE2ACC5C5C007C0344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA80FD2ACC5C5C007C0344 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 		BFDA81142ACC5C5E007C0344 /* clickerGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA81132ACC5C5E007C0344 /* clickerGameTests.swift */; };
 		BFDA811E2ACC5C5E007C0344 /* clickerGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA811D2ACC5C5E007C0344 /* clickerGameUITests.swift */; };
 		BFDA81202ACC5C5E007C0344 /* clickerGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA811F2ACC5C5E007C0344 /* clickerGameUITestsLaunchTests.swift */; };
+		BFDA812D2ACC5E28007C0344 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA812C2ACC5E28007C0344 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1E25C02ACC60E9000F8218 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		BFDA80F62ACC5C5C007C0344 /* clickerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clickerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDA80F92ACC5C5C007C0344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDA80FB2ACC5C5C007C0344 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		BFDA81192ACC5C5E007C0344 /* clickerGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clickerGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDA811D2ACC5C5E007C0344 /* clickerGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickerGameUITests.swift; sourceTree = "<group>"; };
 		BFDA811F2ACC5C5E007C0344 /* clickerGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickerGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFDA812C2ACC5E28007C0344 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		BFDA80F82ACC5C5C007C0344 /* clickerGame */ = {
 			isa = PBXGroup;
 			children = (
+				BFDA812C2ACC5E28007C0344 /* ViewController2.swift */,
 				BFDA80F92ACC5C5C007C0344 /* AppDelegate.swift */,
 				BFDA80FB2ACC5C5C007C0344 /* SceneDelegate.swift */,
 				BFDA80FD2ACC5C5C007C0344 /* ViewController.swift */,
 				BFDA80FF2ACC5C5C007C0344 /* Main.storyboard */,
+				BF1E25C02ACC60E9000F8218 /* ViewController3.swift */,
 				BFDA81052ACC5C5E007C0344 /* Assets.xcassets */,
 				BFDA81072ACC5C5E007C0344 /* LaunchScreen.storyboard */,
 				BFDA810A2ACC5C5E007C0344 /* Info.plist */,
@@ -261,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDA812D2ACC5E28007C0344 /* ViewController2.swift in Sources */,
 				BFDA80FE2ACC5C5C007C0344 /* ViewController.swift in Sources */,
+				BF1E25C12ACC60E9000F8218 /* ViewController3.swift in Sources */,
 				BFDA80FA2ACC5C5C007C0344 /* AppDelegate.swift in Sources */,
 				BFDA80FC2ACC5C5C007C0344 /* SceneDelegate.swift in Sources */,
 				BFDA81042ACC5C5C007C0344 /* clickerGame.xcdatamodeld in Sources */,
