@@ -45,7 +45,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ClickerGame" id="FVS-bZ-i0x"/>
+                    <navigationItem key="navigationItem" title="ClickerGame" id="FVS-bZ-i0x">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="CfP-Lb-Vge">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IR3-Vf-VJb">
+                                <rect key="frame" x="302" y="4.6666666666666679" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Debug"/>
+                            </button>
+                            <connections>
+                                <action selector="debugAction:" destination="BYZ-38-t0r" id="bV2-u0-NXd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pointsVariable" destination="Gho-cU-1e9" id="BuW-OZ-h6j"/>
                         <segue destination="aWl-Ex-FGe" kind="show" identifier="segue" id="TlF-xx-wHZ"/>
@@ -95,13 +107,6 @@
                                     <action selector="buy2Action:" destination="aWl-Ex-FGe" eventType="touchUpInside" id="1II-LK-i3T"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-Jg-vCs">
-                                <rect key="frame" x="108" y="144" width="182" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-ZB-aPj">
                                 <rect key="frame" x="99" y="103" width="195" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -115,7 +120,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Clicker Game" id="kYe-sP-KkS"/>
                     <connections>
-                        <outlet property="error" destination="rNv-Jg-vCs" id="m7L-YH-lex"/>
                         <outlet property="label" destination="aRT-4z-aWk" id="eGT-13-UKu"/>
                         <outlet property="label2" destination="fbf-B2-JiG" id="h3n-a1-W85"/>
                         <outlet property="labelUpgrade" destination="aRT-4z-aWk" id="j0y-sg-Jwu"/>

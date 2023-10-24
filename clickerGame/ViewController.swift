@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     var pointCount = 0
     var upgrade1 = false
     var upgrade2 = false
+    let alert = UIAlertController(title: "Debug", message: "Pick a option", preferredStyle: .alert)
+    let restartAction = UIAlertAction(title: "Reset", style: .default, handler: nil)
+    let addAction = UIAlertAction(title: "Points", style: .default, handler: nil)
+    let nvmAction = UIAlertAction(title: "Back", style: .default, handler: nil)
 
-
-    
+    //make alerts do something
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,15 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         pointsVariable.text = "\(pointCount)"
     }
+    
+    
+    
+    @IBAction func debugAction(_ sender: UIBarButtonItem) {
+        
+        
+    }
+    
+    
     
     @IBAction func shopButton(_ sender: UIButton) {
         performSegue(withIdentifier: "segue", sender: self)

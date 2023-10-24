@@ -12,8 +12,17 @@ class ViewController3: UIViewController {
     var totalPoints = 0
     var delegate: ViewController!
     
+    let alert = UIAlertController(title: "Error", message: "you're too broke", preferredStyle: .alert)
+    
+    let alert2 = UIAlertController(title: "Error", message: "already bought", preferredStyle: .alert)
+    
+    let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+    
+   
+    
+    
     @IBOutlet weak var pointCountLabel: UILabel!
-    @IBOutlet weak var error: UILabel!
+
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var label2: UILabel!
@@ -24,6 +33,8 @@ class ViewController3: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        alert.addAction(alertAction)
+        alert2.addAction(alertAction)
         pointCountLabel.text = "\(totalPoints)"
         if delegate.upgrade1 == true{
             labelUpgrade.text = "bought"
@@ -38,15 +49,14 @@ class ViewController3: UIViewController {
             delegate.upgrade1 = true
             totalPoints = totalPoints - 20
             pointCountLabel.text = "\(totalPoints)"
-            error.text = ""
             labelUpgrade.text = "bought"
             delegate.pointCount = totalPoints
         }
         else if (delegate.upgrade1 == true){
-            error.text = "already bought"
+            present(alert2, animated: true, completion: nil)
         }
         else{
-            error.text = "you're too poor"
+            present(alert, animated: true, completion: nil)
         }
     }
     
@@ -55,15 +65,14 @@ class ViewController3: UIViewController {
             delegate.upgrade2 = true
             totalPoints = totalPoints - 100
             pointCountLabel.text = "\(totalPoints)"
-            error.text = ""
             labelUpgrade2.text = "bought"
             delegate.pointCount = totalPoints
         }
         else if (delegate.upgrade2 == true){
-            error.text = "already bought"
+            present(alert2, animated: true, completion: nil)
         }
         else{
-            error.text = "you're too poor"
+            present(alert, animated: true, completion: nil)
         }
     }
     
