@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var pointsVariable: UILabel!
-    
+    //
     var pointCount = 0
     var upgrade1 = false
     var upgrade2 = false
